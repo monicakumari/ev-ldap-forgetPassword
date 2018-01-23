@@ -21,6 +21,6 @@
     
     <bean id="webscript.com.eisenvault.authenticationChain.authenticationChain.get" class="com.eisenvault.resetpassword.util.ForgetPasswordUtility"
 		parent="webscript">
-		<property name="authenticationChain" value="${authentication.ldap.chain}"/>
+		<property name="authenticationChain" value="${other.authentication.enabled}"/>
 	</bean>
 </beans>
