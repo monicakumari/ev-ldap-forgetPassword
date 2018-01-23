@@ -1,0 +1,7 @@
+<webscript>
+    <shortname>Authentication chain for LDAP</shortname>
+    <description>get status/value for authentication chain in case for LDAP</description>
+    <url>/com/eisenvault/authenticationChain</url>
+    <authentication>none</authentication>
+    <format default="json"></format>
+</webscript>
