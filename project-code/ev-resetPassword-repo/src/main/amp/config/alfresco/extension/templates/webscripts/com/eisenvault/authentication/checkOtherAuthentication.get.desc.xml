@@ -1,0 +1,7 @@
+<webscript>
+    <shortname>Check Other Authentication</shortname>
+    <description>Check Other Authentication then NTLM</description>
+    <url>/com/eisenvault/checkOtherAuthentication</url>
+    <authentication>none</authentication>
+    <format default="json"></format>
+</webscript>

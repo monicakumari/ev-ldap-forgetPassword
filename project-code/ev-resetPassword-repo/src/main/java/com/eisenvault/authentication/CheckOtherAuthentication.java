@@ -1,4 +1,4 @@
-package com.eisenvault.resetpassword.util;
+package com.eisenvault.authentication;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,12 +7,12 @@ import org.springframework.extensions.webscripts.DeclarativeWebScript;
 import org.springframework.extensions.webscripts.Status;
 import org.springframework.extensions.webscripts.WebScriptRequest;
 
-public class ForgetPasswordUtility extends DeclarativeWebScript{
+public class CheckOtherAuthentication extends DeclarativeWebScript{
 
-	private boolean authenticationChain;
+	private boolean checkOtherAuthentication;
 
-	public void setAuthenticationChain(boolean authenticationChain) {
-		this.authenticationChain = authenticationChain;
+	public void setCheckOtherAuthentication(boolean checkOtherAuthentication) {
+		this.checkOtherAuthentication = checkOtherAuthentication;
 	}
 	
 	@Override
@@ -20,7 +20,7 @@ public class ForgetPasswordUtility extends DeclarativeWebScript{
 		
 		Map<String, Object> model = new HashMap<String, Object>();
 		
-		if(authenticationChain == true)
+		if(checkOtherAuthentication == true)
 			model.put("returnStatus", Boolean.TRUE);
 		else
 			model.put("returnStatus", Boolean.FALSE);

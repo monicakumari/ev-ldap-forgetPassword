@@ -54,7 +54,7 @@ var namespace = function (identifier) {
 	   			
                 Alfresco.util.Ajax.jsonGet(
                 {
-                   url: Alfresco.constants.URL_CONTEXT + "proxy/alfresco-noauth/com/eisenvault/authenticationChain",
+                   url: Alfresco.constants.URL_CONTEXT + "proxy/alfresco-noauth/com/eisenvault/checkOtherAuthentication",
                    successCallback:
                    {
                 	   	fn: function loadWebscript_successCallback(response)

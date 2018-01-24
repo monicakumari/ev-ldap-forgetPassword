@@ -19,8 +19,8 @@
         <property name="workflowService" ref="WorkflowService"/>
     </bean>
     
-    <bean id="webscript.com.eisenvault.authenticationChain.authenticationChain.get" class="com.eisenvault.resetpassword.util.ForgetPasswordUtility"
+    <bean id="webscript.com.eisenvault.authentication.checkOtherAuthentication.get" class="com.eisenvault.authentication.CheckOtherAuthentication"
 		parent="webscript">
-		<property name="authenticationChain" value="${other.authentication.enabled}"/>
+		<property name="checkOtherAuthentication" value="${other.authentication.enabled}"/>
 	</bean>
 </beans>
